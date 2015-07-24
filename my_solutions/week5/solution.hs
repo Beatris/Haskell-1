@@ -7,5 +7,3 @@ instance Functor BTree where
   fmap f Nil = Nil
   fmap f (Leaf a) = Leaf $ f a
   fmap f (Node a b c) = Node (f a) (fmap f b) (fmap f c)
-
---03. Simple Parser
